@@ -7,14 +7,15 @@ import os
 class ImageToVideo:
 
     # Name of the video you will create
-    video_name = ""
+    video_name = "createVideo"
 
     # Source and Destination folder
-    image_folder = "./Video"
+    image_folder = "./Images"
 
     def ConvertImageToVideo(video_name_passed, image_folder_passed):
 
-        images = [img for img in os.listdir(image_folder_passed) if img.endswith(".png")]
+        #specify what type of image file you want (default I have jpg)
+        images = [img for img in os.listdir(image_folder_passed) if img.endswith(".jpg")]
         frame = cv2.imread(os.path.join(image_folder_passed, images[0]))
         height, width, layers = frame.shape
 

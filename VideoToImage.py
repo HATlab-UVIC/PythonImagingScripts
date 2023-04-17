@@ -7,8 +7,8 @@ class VideoToImage:
     # Written by Matt Sielecki
 
     # Source Folder and Source Video
-    video_folder = "./" 
-    video_name = "Video.mp4"
+    video_folder = "./Videos" 
+    video_name = "video.mp4"
 
     # Destination Folder of the frames
     save_folder = "./SlicedVideos"

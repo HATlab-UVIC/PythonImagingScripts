@@ -7,7 +7,7 @@ import csv
 
 class DatapointsToCSV:
 
-    file_name = 'bestfile.csv'
+    file_name = 'data.csv'
     
     # Image to read
     image_name = './abImage.jpg'
